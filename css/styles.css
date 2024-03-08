@@ -29,7 +29,7 @@ margin: 0 auto;
 /* header */
 
 .header{
-    border-bottom: 1px solid #e7e9fa;
+    border-bottom: 1px solid #e7e9fc;
 }
 .header-container{
     display: flex;
@@ -59,7 +59,6 @@ margin: 0 auto;
     gap: 40px;
 }
 .header-menu-item{
-padding: 24px 0;
 display: block;}
 
 .header-menu-link{
@@ -68,7 +67,8 @@ display: block;}
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #2e2f42;}
+    color: #2e2f42;
+padding: 24px 0;}
 
 .header-menu-link:hover, 
 .header-menu-link:focus{ color: #404BBF}
@@ -250,8 +250,9 @@ letter-spacing: 0.02em;
 text-transform: capitalize;
 text-align: center;
 color: #2e2f42;
-padding: 0 455px 72px 455px;
-display: flex;}
+padding: 0 455px 0 455px;
+display: flex;
+margin-bottom: 72px;}
 
 .portfolio-menu-list{
     display: flex;
@@ -261,37 +262,35 @@ display: flex;}
 .portfolio-menu-item {
     width:calc((100% - 2 * 24px) / 3) ;
 }
-.border{border-bottom: 1px solid #e7e9fa;
-    border-left: 1px solid #e7e9fa;
-    border-right: 1px solid #e7e9fa;
-
+.border{
+    border-bottom: 1px solid #e7e9fa;
+        border-left: 1px solid #e7e9fa;
+        border-right: 1px solid #e7e9fa;
+    border-top: none;
+padding: 32px 16px;
 }
 .portfolio-menu-subtitles{
-    font-weight: 500;
+    font-weight: 500;;
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2e2f42;
-        margin-top: 32px;
         margin-bottom: 8px;
-        margin-left: 16px;
+        
 }
 .portfolio-menu-text{
     font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        margin-bottom: 32px;
-        margin-left: 16px;
 }
 
 /* footer */
 
 .footer{
 background: #2e2f42;
-width: 1440px;
-    height: 312px;
-}
+padding: 100px 1020px 100px 156px;}
+    
 
     
 
@@ -302,7 +301,10 @@ font-weight: 700;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #4d5ae5;}
+    color: #4d5ae5;
+    display: inline-block;
+    margin-bottom: 16px;
+}
     
 
 .footer-link-color{
@@ -316,5 +318,6 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #f4f4fd;
+max-width: 264px;
 }
 
