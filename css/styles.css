@@ -101,13 +101,11 @@ margin-left: auto;}
 { color: #404BBF}
 
 /* hero */
-.hero-container {
-    width: 1440px;
-    height: 600px;
-}
+
 
 .hero{
-    background: #2e2f42;}
+    background: #2e2f42;
+padding: 188px 0;}
 
 
 .hero-title{
@@ -117,14 +115,8 @@ margin-left: auto;}
         letter-spacing: 0.02em;
         text-align: center;
         color: #fff;
-        height: 120px;
-        width: 496px;
-        align-self: center;
-        padding-top: 188px;
-        padding-right: 472px;
-        padding-bottom: 48px;
-        padding-left: 472px;
-
+        max-width: 496px;
+        margin: 0 auto;
 }
 
 
@@ -142,6 +134,10 @@ margin-left: auto;}
     gap: 10px;
     margin: 0 auto;
     display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    margin-top: 48px;
 }
 
 .button:hover,
@@ -149,10 +145,12 @@ margin-left: auto;}
 .button:active{background: #404BBF}
 
 /* advantages */
+.advantages-title{
+    visibility: hidden;
+}
 
 .advantages{
-    padding-top: 120px;
-    padding-bottom: 120px;
+   padding: 120px 0;
 }
 .advantages-list{
     display: flex;
@@ -166,7 +164,8 @@ margin-left: auto;}
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2e2f42;
-        margin-bottom: 18px;
+        margin-bottom: 8px;
+        width: calc((100% - 3 * 24) / 4);
 }
 
 .advantages-item-text{
@@ -181,6 +180,7 @@ margin-left: auto;}
 .team {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
         background: #f4f4fd;
+        padding: 120px 0;
 }
 
 .team-item{background: #ffffff;
@@ -195,7 +195,7 @@ width: calc((100% - 3 * 24px) / 4);}
 .team-list{
     display: flex;
     gap: 24px;
-    padding-bottom: 120px;
+  
     
 }
 .team-title{
@@ -206,10 +206,10 @@ letter-spacing: 0.02em;
 text-transform: capitalize;
 text-align: center;
 color: #2e2f42;
-padding-top: 120px;
-padding-right: 498px;
-padding-bottom: 72px;
-padding-left: 498px;
+margin-bottom: 72px;
+}
+.team-name{
+    padding: 32px 0;
 }
 
 
@@ -229,7 +229,6 @@ font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
-    margin-bottom: 32px;
 }
 
 /* portfolio */
