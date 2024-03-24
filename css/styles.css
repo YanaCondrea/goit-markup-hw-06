@@ -3,6 +3,12 @@ body {
     color: #434455;
     background-color: white;
 }
+@media (min-width: 320px){
+    .body{
+        overflow-x: hidden;
+    }
+}
+
 h1,h2,h3,h4,h5,h6, p{
 margin: 0;
 }
