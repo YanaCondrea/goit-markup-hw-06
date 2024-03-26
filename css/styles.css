@@ -3,11 +3,7 @@ body {
     color: #434455;
     background-color: white;
 }
-@media (min-width: 320px){
-    .body{
-        overflow-x: hidden;
-    }
-}
+
 
 h1,h2,h3,h4,h5,h6, p{
 margin: 0;
@@ -26,9 +22,10 @@ img{
     height: auto;
 }
 .container{
-width: 1158px;
-padding: 0 15px;
+width: 320px;
+padding: 0 16px;
 margin: 0 auto;
+overflow-x: hidden;
 }
 /* header */
 
@@ -194,43 +191,42 @@ margin-left: auto;}
 }
 
 .advantages{
-   padding: 120px 0;
+   padding: 96px 0;
+   
 }
 .advantages-list{
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 72px;
+    
 }
 
 .advantages-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 112px;
-    background: #f4f4fd;
-    border-radius: 4px;
-    border: 1px solid #8e8f99;
-    margin-bottom: 8px;
+    display: none;
+    
 }
 
 
 
 .advantages-item{
-width: calc((100% - 3 * 24px) / 4)}
+/* width: calc((100% - 3 * 24px) / 4) */
+width: 100%;
+}
 
 .advantages-item-subtitles{
-    font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        color: #2e2f42;
-        margin-bottom: 8px;
-        
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+letter-spacing: 0.02em;
+text-align: center;
+color: #2e2f42;
+margin-bottom: 8px;
 }
 
 
 
 .advantages-item-text{
-    font-weight: 400;
+    font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
@@ -783,3 +779,58 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background: #404bbf;
     
 }
+
+@media screen and (min-width: 768px) {
+.container { 
+    width: 768px;}
+    .advantages-list {
+        gap: 72px 24px;
+    }
+
+.advantages-item {
+    width: calc((100% - 1 * 24px) / 2 );
+}  
+ 
+}
+
+
+
+@media screen and (min-width: 1158px) {
+    .container {
+        width: 1158px;
+        padding: 0 15px;
+    }
+    .advantages {
+        padding: 120px 0;
+    }
+    .advantages-list{
+        gap: 24px;
+    }
+    .advantages-item {
+        width: calc((100% - 3 * 24px) / 4);
+    }
+
+    .advantages-container {
+        display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 112px;
+            background: #f4f4fd;
+            border-radius: 4px;
+            border: 1px solid #8e8f99;
+            margin-bottom: 8px;
+    }
+    .advantages-item-subtitles {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+        text-align: left;
+        margin-bottom: 8px; 
+    }
+    .advantages-item-text{
+font-weight: 400;
+    }
+}
+
