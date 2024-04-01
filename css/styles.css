@@ -86,11 +86,14 @@ margin-left: auto;}
     border: none;
 }
 
+/* mob-menu */
+
 .mob-menu{
     position: fixed;
     top: 0;
+    left: 0;
     background: #fff;
-    width: 100%;
+    min-width: 100%;
     height: 100%;
     padding: 24px 24px 40px 16px;
     display: flex;
@@ -98,14 +101,19 @@ margin-left: auto;}
     justify-content: space-between;
     opacity: 0;
     pointer-events: none;
-    visibility: hidden;
+    
+}
+
+.mob-menu.is-open {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .mob-button{
     display: block;
     margin-left: auto;
     margin-bottom: 24px;
-width: 24px;
+    width: 24px;
     height: 24px;
     border-radius: 50%;
     display: flex;
@@ -118,9 +126,9 @@ width: 24px;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .mob-menu-list{
+    /* .mob-menu-list{
         margin-bottom: 50px;
-    }
+    } */
     .mob-menu-link{
         font-weight: 700;
             font-size: 36px;
@@ -155,6 +163,7 @@ width: 24px;
         letter-spacing: 0.02em;
         color: #434455;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
  }
 
 .mob-address-link:hover,
@@ -298,7 +307,6 @@ fill: #f4f4fd;
 
 
 .advantages-item{
-/* width: calc((100% - 3 * 24px) / 4) */
 width: 100%;
 }
 
@@ -392,7 +400,7 @@ font-weight: 400;
     justify-content: center;
     gap: 24px;
     margin-top: 8px;
-    padding: 0 16px;
+    
 }
 .social-link{
     width: 40px;
@@ -929,6 +937,10 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     /* media-header */
 
+.header{
+    padding: 16px 0;
+}
+
 .header-link {
     margin-right: 120px;
 }
@@ -959,7 +971,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     content: "";
     position: absolute;
     left: 0;
-    bottom: 6px;
+    bottom: -9px;
     border-radius: 2px;
     height: 4px;
     background: #404bbf;
@@ -972,9 +984,15 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-address-list {
-    display: block;
-
+    display: inline-block;
+    
+    
 }
+
+.header-address-item:not(:last-child) {
+    margin-bottom: 12px;
+}
+
 
 
 .header-address-link {
@@ -985,6 +1003,8 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     letter-spacing: 0.04em;
     color: #434455;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+
 }
 
 
@@ -1031,6 +1051,12 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 width: calc((100% - 1 * 24px) / 2 );
 } 
 
+.advantages-item-subtitles{
+  text-align: left;  
+}
+
+
+
 /* media-team */
 
 .team-list{
@@ -1057,8 +1083,7 @@ width: calc((100% - 1 * 24px) / 2 );
 }
 
 .footer .container{
-padding-right: 164px;
-padding-left: 108px;
+max-width: 584px;
 }
 
 /* media-footer */
@@ -1233,6 +1258,8 @@ width:calc((100% - 2 * 24px) / 3) ;
     align-items: baseline;
     justify-content: center;
     padding: 0 15px;
+    max-width: 1158px;
+        
     
 }
 
